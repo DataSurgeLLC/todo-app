@@ -2,9 +2,11 @@
   "name": "todo-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "nodemon server/index.js"
+    "start": "nodemon src/server/index.js",
+    "test": "jest",
+    "coverage": "jest --collect-coverage"
   },
   "keywords": [],
   "author": "",
@@ -12,12 +14,17 @@
   "dependencies": {
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
+    "coverage": "^0.4.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "mongoose": "^6.1.10",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "superagent": "^7.1.1",
+    "supertest": "^6.2.2"
   }
 }
